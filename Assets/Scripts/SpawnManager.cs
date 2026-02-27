@@ -14,8 +14,8 @@ public class SpawnManager : MonoBehaviour
     void Spawn()
     {
         GameObject playerGo = GameObject.FindGameObjectWithTag("Player");
-        //ใช้ GameObject.FindGameObjectWithTag("Player");
-        //เพื่อให้หาแค่เฉพาะ Tag ที่เป็น Player เท่านั้น ไม่ต้องมานั้งหา Player ทั้ง Sence อย่าง GameObject.Find("Player");
+        //Use GameObject.FindGameObjectWithTag("Player");
+        //for only find player tag. no need to find all Player in Scene such as GameObject.Find("Player");
         PlayerController player = playerGo.GetComponent<PlayerController>();
         if (player.isGameOver)
         {
